@@ -86,7 +86,7 @@ vim.diagnostic.config({
 
 -- Show line diagnostics automatically in hover window
 vim.cmd([[
-  autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, { focus = false })
+  autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, { focus = true })
 ]])
 
 -- Mappings.
@@ -122,7 +122,7 @@ end
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches.
 -- Add your language server below:
-local servers = { 'bashls', 'pyright', 'clangd', 'html', 'cssls', 'tsserver' }
+local servers = { 'bashls', 'pyright', 'clangd', 'html', 'cssls', 'tsserver', 'lua_ls' }
 
 -- Call setup
 for _, lsp in ipairs(servers) do
