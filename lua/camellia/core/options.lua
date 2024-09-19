@@ -10,6 +10,7 @@ opt.shiftwidth = 4 -- 4 spaces for index width
 opt.expandtab = true -- expand tab to space
 opt.autoindent = true -- copy indent from current line when starting new one
 
+opt.scrolloff = 10
 opt.wrap = false
 
 -- search settings
